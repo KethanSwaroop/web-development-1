@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .pricing-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+  text-align: center;
+      width: 30%;
+    }
+
+    .toggle-button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pricing Page</h1>
+  </header>
+
+  <div class="pricing-container">
+    <div class="pricing-card">
+      <h2>Basic Plan</h2>
+      <p>$10/month</p>
+      <button class="toggle-button">Select</button>
+    </div>
+
+    <div class="pricing-card">
+      <h2>Standard Plan</h2>
+      <p>$20/month</p>
+      <button class="toggle-button">Select</button>
+    </div>
+
+    <div class="pricing-card">
+      <h2>Premium Plan</h2>
+      <p>$30/month</p>
+      <button class="toggle-button">Select</button>
+    </div>
+ </div>
+
+  <script>
+    const toggleButtons = document.querySelectorAll('.toggle-button');
+
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Add logic to handle selection/deselection
+        alert('Plan Selected!');
+      });
+    });
+  </script>
+
+</body>
+</html>
